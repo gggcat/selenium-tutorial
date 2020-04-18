@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  selenium-python3slim:
+    container_name: selenium-python3slim
+    build:
+      context: .
+      dockerfile: selenium-python3slim.Dockerfile
+    working_dir: /app
+    tty: true
+    volumes:
+        - ./app:/app
